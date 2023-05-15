@@ -1,23 +1,25 @@
 import React from 'react';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+// import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
-    const settings = {
-      dots: true,
-      centerMode: true,
-      centerPadding: "60px",
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear"
-    };
+    // const settings = {
+    //   dots: true,
+    //   centerMode: true,
+    //   centerPadding: "60px",
+    //   infinite: true,
+    //   slidesToShow: 3,
+    //   slidesToScroll: 1,
+    //   autoplay: true,
+    //   speed: 2000,
+    //   autoplaySpeed: 2000,
+    //   cssEase: "linear"
+    // };
 
 
 
@@ -46,13 +48,14 @@ const Carousel = () => {
     ]
  
   return (
-        <div className='my-10'>
+        <div className='my-10 mx-10'>
         {/* <h2>Auto Play</h2> */}
-        <Slider {...settings}>
+        <AwesomeSlider animation="cubeAnimation">
          {
-          images?.map((img, idx) => <img key={idx} src={img?.image} className='h-52 hover:h-72 w-32 border border-base-100' alt="" />)
+          images?.map((img, idx) => <div key={idx}  data-src={img?.image}>
+          </div>)
          }
-        </Slider>
+        </AwesomeSlider>
         
       </div>
   );
