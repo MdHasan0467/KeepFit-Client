@@ -1,3 +1,59 @@
+.bg-hero-image {
+  background-image: url('https://dungcutheduc.vn/images/contents/fitness.jpg');
+}
+
+.bg-cover {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
